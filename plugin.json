@@ -1,0 +1,141 @@
+{
+  "id": "com.xiaohongshu.media",
+  "name": "小红书",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "runtime": "javascript",
+  "entry": "main.js",
+  "priority": 100,
+  "locales": {
+    "zh": {
+      "name": "小红书",
+      "description": "捕获作品弹窗中的视频、图集和 Live Photo 附带视频。"
+    },
+    "en": {
+      "name": "Xiaohongshu",
+      "description": "Captures videos, image galleries and Live Photo motion files from work details."
+    }
+  },
+  "permissions": {
+    "domains": [
+      "xiaohongshu.com",
+      "*.xiaohongshu.com",
+      "xhscdn.com",
+      "*.xhscdn.com"
+    ],
+    "capabilities": [
+      "observe-response",
+      "read-response-body",
+      "emit-resource",
+      "media.basic",
+      "capture-response-body"
+    ],
+    "bodyLimit": 1048576
+  },
+  "match": [
+    {
+      "stage": "response",
+      "host": "edith.xiaohongshu.com",
+      "path": "/api/sns/web/v1/feed",
+      "contentTypes": [
+        "application/json*",
+        "text/json*",
+        "application/octet-stream*"
+      ],
+      "readBody": true
+    },
+    {
+      "stage": "response",
+      "host": "xiaohongshu.com",
+      "path": "/*",
+      "readBody": false
+    },
+    {
+      "stage": "response",
+      "host": "*.xiaohongshu.com",
+      "path": "/*",
+      "readBody": false
+    },
+    {
+      "stage": "response",
+      "host": "xhscdn.com",
+      "path": "/*",
+      "readBody": false
+    },
+    {
+      "stage": "response",
+      "host": "*.xhscdn.com",
+      "path": "/*",
+      "readBody": false
+    }
+  ],
+  "resourceKinds": [
+    {
+      "id": "media.video",
+      "icon": "video",
+      "locales": {
+        "zh": {
+          "name": "视频"
+        },
+        "en": {
+          "name": "Video"
+        }
+      }
+    },
+    {
+      "id": "media.image",
+      "icon": "image",
+      "locales": {
+        "zh": {
+          "name": "图片"
+        },
+        "en": {
+          "name": "Image"
+        }
+      }
+    },
+    {
+      "id": "media.collection",
+      "icon": "folder",
+      "locales": {
+        "zh": {
+          "name": "合集"
+        },
+        "en": {
+          "name": "Collection"
+        }
+      }
+    },
+    {
+      "id": "document.text",
+      "icon": "document",
+      "locales": {
+        "zh": {
+          "name": "文档"
+        },
+        "en": {
+          "name": "Document"
+        }
+      }
+    }
+  ],
+  "settingsSchema": {
+    "type": "object",
+    "properties": {
+      "enableLog": {
+        "type": "boolean",
+        "default": false,
+        "x-locales": {
+          "zh": {
+            "name": "启用日志",
+            "description": "记录脱敏的插件调试信息。"
+          },
+          "en": {
+            "name": "Enable logging",
+            "description": "Record sanitized plugin diagnostics."
+          }
+        }
+      }
+    }
+  }
+}

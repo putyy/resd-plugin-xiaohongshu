@@ -1,0 +1,34 @@
+{
+  "observations": [
+    {
+      "stage": "response",
+      "request": {
+        "method": "POST",
+        "url": "https://edith.xiaohongshu.com/api/sns/web/v1/feed",
+        "host": "edith.xiaohongshu.com",
+        "path": "/api/sns/web/v1/feed",
+        "headers": {
+          "User-Agent": [
+            "Fixture browser"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "contentType": "application/json; charset=utf-8",
+        "body": "{\"code\": 0, \"success\": true, \"data\": {\"items\": [{\"id\": \"000000000000000000000001\", \"note_card\": {\"note_id\": \"000000000000000000000001\", \"type\": \"video\", \"title\": \"示例视频\", \"desc\": \"示例说明\", \"user\": {\"nickname\": \"示例作者\"}, \"time\": 1700000000000, \"image_list\": [{\"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-0!nd_dft_wlteh_jpg_3\"}], \"video\": {\"media_v2\": \"{invalid\", \"media\": {\"video\": {\"drm_type\": 0}, \"stream\": {\"EF4\": [{\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-720.mp4?sign=fixture&t=4102444800\", \"height\": 720, \"width\": 1280, \"format\": \"mp4\", \"video_codec\": \"EF4\", \"duration\": 120386, \"video_duration\": 120366, \"audio_duration\": 120386, \"audio_channels\": 2, \"audio_codec\": \"aac\", \"size\": 2000000, \"stream_type\": 259}]}}}}}]}}"
+      }
+    }
+  ],
+  "expected": {
+    "resourceCount": 3,
+    "resourceUrls": [
+      "https://sns-video-v6.xhscdn.com/fixture/video-720.mp4?sign=fixture&t=4102444800"
+    ]
+  }
+}

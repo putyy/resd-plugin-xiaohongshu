@@ -1,0 +1,34 @@
+{
+  "observations": [
+    {
+      "stage": "response",
+      "request": {
+        "method": "POST",
+        "url": "https://edith.xiaohongshu.com/api/sns/web/v1/feed",
+        "host": "edith.xiaohongshu.com",
+        "path": "/api/sns/web/v1/feed",
+        "headers": {
+          "User-Agent": [
+            "Fixture browser"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "contentType": "application/json; charset=utf-8",
+        "body": "{\"code\": 0, \"success\": true, \"data\": {\"items\": [{\"id\": \"000000000000000000000001\", \"note_card\": {\"note_id\": \"000000000000000000000001\", \"type\": \"video\", \"title\": \"示例视频\", \"desc\": \"示例说明\", \"user\": {\"nickname\": \"示例作者\"}, \"time\": 1700000000000, \"image_list\": [{\"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-0!nd_dft_wlteh_jpg_3\"}], \"video\": {\"media_v2\": \"{\\\"video\\\": {\\\"drm_type\\\": 0}, \\\"stream\\\": {\\\"EF5\\\": [{\\\"master_url\\\": \\\"http://sns-video-v6.xhscdn.com/fixture/video-720.m4s?sign=fixture&t=4102444800\\\", \\\"backup_urls\\\": [\\\"http://sns-bak-v1.xhscdn.com/fixture/video-720.m4s\\\"], \\\"height\\\": 720, \\\"width\\\": 1280, \\\"format\\\": \\\"fmp4\\\", \\\"video_codec\\\": \\\"EF5\\\", \\\"duration\\\": 120366, \\\"video_duration\\\": 120366, \\\"audio_channels\\\": 0, \\\"audio_duration\\\": 0, \\\"avg_bitrate\\\": 500000, \\\"size\\\": 1000000, \\\"stream_type\\\": 3090, \\\"opaque1\\\": {\\\"prefer_audio\\\": \\\"103\\\"}}, {\\\"master_url\\\": \\\"http://sns-video-v6.xhscdn.com/fixture/video-1080.m4s?sign=fixture&t=4102444800\\\", \\\"backup_urls\\\": [\\\"http://sns-bak-v1.xhscdn.com/fixture/video-1080.m4s\\\"], \\\"height\\\": 1080, \\\"width\\\": 1920, \\\"format\\\": \\\"fmp4\\\", \\\"video_codec\\\": \\\"EF5\\\", \\\"duration\\\": 120366, \\\"video_duration\\\": 120366, \\\"audio_channels\\\": 0, \\\"audio_duration\\\": 0, \\\"avg_bitrate\\\": 1000000, \\\"size\\\": 2000000, \\\"stream_type\\\": 3091, \\\"opaque1\\\": {\\\"prefer_audio\\\": \\\"103\\\"}}, {\\\"master_url\\\": \\\"http://sns-video-v6.xhscdn.com/fixture/video-1440.m4s?sign=fixture&t=4102444800\\\", \\\"backup_urls\\\": [\\\"http://sns-bak-v1.xhscdn.com/fixture/video-1440.m4s\\\"], \\\"height\\\": 1440, \\\"width\\\": 2560, \\\"format\\\": \\\"fmp4\\\", \\\"video_codec\\\": \\\"EF5\\\", \\\"duration\\\": 120366, \\\"video_duration\\\": 120366, \\\"audio_channels\\\": 0, \\\"audio_duration\\\": 0, \\\"avg_bitrate\\\": 1500000, \\\"size\\\": 3000000, \\\"stream_type\\\": 3092, \\\"opaque1\\\": {\\\"prefer_audio\\\": \\\"103\\\"}}, {\\\"master_url\\\": \\\"http://sns-video-v6.xhscdn.com/fixture/video-2160.m4s?sign=fixture&t=4102444800\\\", \\\"backup_urls\\\": [\\\"http://sns-bak-v1.xhscdn.com/fixture/video-2160.m4s\\\"], \\\"height\\\": 2160, \\\"width\\\": 3840, \\\"format\\\": \\\"fmp4\\\", \\\"video_codec\\\": \\\"EF5\\\", \\\"duration\\\": 120366, \\\"video_duration\\\": 120366, \\\"audio_channels\\\": 0, \\\"audio_duration\\\": 0, \\\"avg_bitrate\\\": 2000000, \\\"size\\\": 4000000, \\\"stream_type\\\": 3093, \\\"opaque1\\\": {\\\"prefer_audio\\\": \\\"103\\\"}}], \\\"EF4\\\": [{\\\"master_url\\\": \\\"http://sns-video-v6.xhscdn.com/fixture/video-720.mp4?sign=fixture&t=4102444800\\\", \\\"height\\\": 720, \\\"width\\\": 1280, \\\"format\\\": \\\"mp4\\\", \\\"video_codec\\\": \\\"EF4\\\", \\\"duration\\\": 120386, \\\"video_duration\\\": 120366, \\\"audio_duration\\\": 120386, \\\"audio_channels\\\": 2, \\\"audio_codec\\\": \\\"aac\\\", \\\"size\\\": 2000000, \\\"stream_type\\\": 259}]}, \\\"audio_stream\\\": {}}\", \"media\": {\"video\": {\"drm_type\": 0}, \"stream\": {\"EF5\": [{\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-720.m4s?sign=fixture&t=4102444800\", \"backup_urls\": [\"http://sns-bak-v1.xhscdn.com/fixture/video-720.m4s\"], \"height\": 720, \"width\": 1280, \"format\": \"fmp4\", \"video_codec\": \"EF5\", \"duration\": 120366, \"video_duration\": 120366, \"audio_channels\": 0, \"audio_duration\": 0, \"avg_bitrate\": 500000, \"size\": 1000000, \"stream_type\": 3090, \"opaque1\": {\"prefer_audio\": \"103\"}}, {\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-1080.m4s?sign=fixture&t=4102444800\", \"backup_urls\": [\"http://sns-bak-v1.xhscdn.com/fixture/video-1080.m4s\"], \"height\": 1080, \"width\": 1920, \"format\": \"fmp4\", \"video_codec\": \"EF5\", \"duration\": 120366, \"video_duration\": 120366, \"audio_channels\": 0, \"audio_duration\": 0, \"avg_bitrate\": 1000000, \"size\": 2000000, \"stream_type\": 3091, \"opaque1\": {\"prefer_audio\": \"103\"}}, {\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-1440.m4s?sign=fixture&t=4102444800\", \"backup_urls\": [\"http://sns-bak-v1.xhscdn.com/fixture/video-1440.m4s\"], \"height\": 1440, \"width\": 2560, \"format\": \"fmp4\", \"video_codec\": \"EF5\", \"duration\": 120366, \"video_duration\": 120366, \"audio_channels\": 0, \"audio_duration\": 0, \"avg_bitrate\": 1500000, \"size\": 3000000, \"stream_type\": 3092, \"opaque1\": {\"prefer_audio\": \"103\"}}, {\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-2160.m4s?sign=fixture&t=4102444800\", \"backup_urls\": [\"http://sns-bak-v1.xhscdn.com/fixture/video-2160.m4s\"], \"height\": 2160, \"width\": 3840, \"format\": \"fmp4\", \"video_codec\": \"EF5\", \"duration\": 120366, \"video_duration\": 120366, \"audio_channels\": 0, \"audio_duration\": 0, \"avg_bitrate\": 2000000, \"size\": 4000000, \"stream_type\": 3093, \"opaque1\": {\"prefer_audio\": \"103\"}}], \"EF4\": [{\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/video-720.mp4?sign=fixture&t=4102444800\", \"height\": 720, \"width\": 1280, \"format\": \"mp4\", \"video_codec\": \"EF4\", \"duration\": 120386, \"video_duration\": 120366, \"audio_duration\": 120386, \"audio_channels\": 2, \"audio_codec\": \"aac\", \"size\": 2000000, \"stream_type\": 259}]}}}}}]}}"
+      }
+    }
+  ],
+  "expected": {
+    "resourceCount": 3,
+    "resourceUrls": [
+      "https://sns-video-v6.xhscdn.com/fixture/video-720.mp4?sign=fixture&t=4102444800"
+    ]
+  }
+}

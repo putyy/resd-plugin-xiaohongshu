@@ -1,0 +1,40 @@
+{
+  "observations": [
+    {
+      "stage": "response",
+      "request": {
+        "method": "POST",
+        "url": "https://edith.xiaohongshu.com/api/sns/web/v1/feed",
+        "host": "edith.xiaohongshu.com",
+        "path": "/api/sns/web/v1/feed",
+        "headers": {
+          "User-Agent": [
+            "Fixture browser"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "contentType": "application/json; charset=utf-8",
+        "body": "{\"code\": 0, \"success\": true, \"data\": {\"items\": [{\"id\": \"000000000000000000000002\", \"note_card\": {\"note_id\": \"000000000000000000000002\", \"type\": \"normal\", \"title\": \"示例图集\", \"user\": {\"nickname\": \"示例作者\"}, \"time\": 1700000000000, \"image_list\": [{\"width\": 3072, \"height\": 4096, \"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-1!nd_dft_wlteh_jpg_3\", \"url_pre\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-1!nd_prv_wlteh_jpg_3\", \"info_list\": [{\"image_scene\": \"WB_PRV\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-1!nd_prv_wlteh_jpg_3\"}, {\"image_scene\": \"WB_DFT\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-1!nd_dft_wlteh_jpg_3\"}], \"live_photo\": true, \"stream\": {\"EF4\": [{\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/live-1.mp4?sign=fixture&t=4102444800\", \"backup_urls\": [], \"weight\": 1}]}}, {\"width\": 3072, \"height\": 4096, \"url_default\": \"\", \"url_pre\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-2!nd_prv_wlteh_jpg_3\", \"info_list\": [{\"image_scene\": \"WB_PRV\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-2!nd_prv_wlteh_jpg_3\"}, {\"image_scene\": \"WB_DFT\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-2!nd_dft_wlteh_jpg_3\"}], \"live_photo\": true, \"stream\": {\"EF4\": [{\"master_url\": \"http://sns-video-v6.xhscdn.com/fixture/live-2.mp4?sign=fixture&t=4102444800\", \"backup_urls\": [], \"weight\": 1}]}}, {\"width\": 3072, \"height\": 4096, \"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-3!nd_dft_wlteh_jpg_3\", \"url_pre\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-3!nd_prv_wlteh_jpg_3\", \"info_list\": [{\"image_scene\": \"WB_PRV\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-3!nd_prv_wlteh_jpg_3\"}, {\"image_scene\": \"WB_DFT\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-3!nd_dft_wlteh_jpg_3\"}], \"live_photo\": false, \"stream\": {}}, {\"width\": 3072, \"height\": 4096, \"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-4!nd_dft_wlteh_jpg_3\", \"url_pre\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-4!nd_prv_wlteh_jpg_3\", \"info_list\": [{\"image_scene\": \"WB_PRV\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-4!nd_prv_wlteh_jpg_3\"}, {\"image_scene\": \"WB_DFT\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-4!nd_dft_wlteh_jpg_3\"}], \"live_photo\": false, \"stream\": {}}, {\"width\": 3072, \"height\": 4096, \"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-5!nd_dft_wlteh_jpg_3\", \"url_pre\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-5!nd_prv_wlteh_jpg_3\", \"info_list\": [{\"image_scene\": \"WB_PRV\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-5!nd_prv_wlteh_jpg_3\"}, {\"image_scene\": \"WB_DFT\", \"url\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-5!nd_dft_wlteh_jpg_3\"}], \"live_photo\": false, \"stream\": {}}]}}]}}"
+      }
+    }
+  ],
+  "expected": {
+    "resourceCount": 8,
+    "resourceUrls": [
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-1!nd_dft_wlteh_jpg_3",
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-2!nd_dft_wlteh_jpg_3",
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-3!nd_dft_wlteh_jpg_3",
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-4!nd_dft_wlteh_jpg_3",
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-5!nd_dft_wlteh_jpg_3",
+      "https://sns-video-v6.xhscdn.com/fixture/live-1.mp4?sign=fixture&t=4102444800",
+      "https://sns-video-v6.xhscdn.com/fixture/live-2.mp4?sign=fixture&t=4102444800"
+    ]
+  }
+}

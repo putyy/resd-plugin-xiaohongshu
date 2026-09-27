@@ -1,0 +1,34 @@
+{
+  "observations": [
+    {
+      "stage": "response",
+      "request": {
+        "method": "POST",
+        "url": "https://edith.xiaohongshu.com/api/sns/web/v1/feed",
+        "host": "edith.xiaohongshu.com",
+        "path": "/api/sns/web/v1/feed",
+        "headers": {
+          "User-Agent": [
+            "Fixture browser"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "contentType": "application/json; charset=utf-8",
+        "body": "{\"code\": 0, \"success\": true, \"data\": {\"items\": [{\"id\": \"000000000000000000000003\", \"note_card\": {\"note_id\": \"000000000000000000000003\", \"type\": \"normal\", \"title\": \"\", \"user\": {\"nickname\": \"示例作者\"}, \"time\": 1700000000000, \"image_list\": [{\"url_default\": \"https://sns-webpic-qc.xhscdn.com/fixture/image-6!nd_dft_wlteh_jpg_3\", \"live_photo\": false}], \"desc\": \"无标题作品的首行\\n后续说明\"}}]}}"
+      }
+    }
+  ],
+  "expected": {
+    "resourceCount": 3,
+    "resourceUrls": [
+      "https://sns-webpic-qc.xhscdn.com/fixture/image-6!nd_dft_wlteh_jpg_3"
+    ]
+  }
+}
