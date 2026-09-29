@@ -1,6 +1,10 @@
 {
-  "id": "com.xiaohongshu.media",
+  "id": "official.xiaohongshu",
   "name": "小红书",
+  "author": {
+    "name": "putyy",
+    "url": "https://github.com/putyy/resd-plugin-xiaohongshu"
+  },
   "version": "1.0.0",
   "apiVersion": 1,
   "runtime": "javascript",
