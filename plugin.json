@@ -5,7 +5,7 @@
     "name": "putyy",
     "url": "https://github.com/putyy/resd-plugin-xiaohongshu"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiVersion": 1,
   "runtime": "javascript",
   "entry": "main.js",
