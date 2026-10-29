@@ -291,7 +291,9 @@ function createDownloadPlan(input) {
     selected.push(audio);
   }
   var plan = {inputs: selected.map(function (v) {
-    return {id: v.id, executor: "http-file", url: v.url, headers: v.headers || {}, extension: v.extension || ""};
+    var input = {id: v.id, executor: "http-file", url: v.url, headers: v.headers || {}, extension: v.extension || ""};
+    if (resource.kind === "media.image") input.options = {xiaohongshuBackup: true};
+    return input;
   }), output: {input: primary.id, extension: primary.extension || "", mime: primary.mime || ""}};
   if (selected.length === 2) {
     plan.pipeline = [{id: "merged", executor: "builtin.media.mux", inputs: [primary.id, "audio"], options: {extension: ".mp4"}}];

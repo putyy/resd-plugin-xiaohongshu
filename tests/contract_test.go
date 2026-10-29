@@ -207,6 +207,13 @@ func TestGalleryAndTitleFallback(t *testing.T) {
 		if len(plan.Inputs) != 1 || len(plan.Pipeline) != 0 {
 			t.Fatal("gallery children are independent files")
 		}
+		if child.Kind == "media.image" {
+			if plan.Inputs[0].URL != child.Tracks[0].URL || plan.Inputs[0].Options["xiaohongshuBackup"] != true {
+				t.Fatal("images must retain their original URL and opt in to host fallback")
+			}
+		} else if plan.Inputs[0].Options["xiaohongshuBackup"] != nil {
+			t.Fatal("fallback must not be enabled for motion videos")
+		}
 	}
 	if _, ok, err := p.Resolve(context.Background(), r.Resources[0], model.DownloadOptions{}); err != nil || ok {
 		t.Fatal("parent must defer to host collection downloader")
@@ -520,3 +527,4 @@ func TestObservedHostsThroughFullPluginChain(t *testing.T) {
 		}
 	}
 }
+
